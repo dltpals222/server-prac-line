@@ -1,0 +1,20 @@
+{
+  "name": "server-prac-line",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dltpals222/server-prac-line.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dltpals222/server-prac-line/issues"
+  },
+  "homepage": "https://github.com/dltpals222/server-prac-line#readme"
+}
