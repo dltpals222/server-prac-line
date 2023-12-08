@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/dltpals222/server-prac-line/issues"
   },
-  "homepage": "https://github.com/dltpals222/server-prac-line#readme"
+  "homepage": "https://github.com/dltpals222/server-prac-line#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "glob": "^10.3.10",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  }
 }
