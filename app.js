@@ -12,5 +12,21 @@ const app = express();
 app.use(cookieParser());
 
 //view setup
-app.set('views',path.join(__dirname, 'views'))
-app.engine('html',require('ejs').renderFile)
+app.set('views',path.join(__dirname, 'views'));
+app.engine('html',require('ejs').renderFile);
+app.set('view engine','html');
+app.set('layout','layout');
+app.use(expressLayouts);
+app.set('layout');
+
+app.use(logger('dev'));
+app.use(express.json({limit : '500mb'}));
+app.use(express.urlencoded({limit:'500mb',extended:false}));
+app.use(express.static(path.join(__dirname,'public')));
+
+// CORS setup
+const cors = require('cors')
+app.use(cors);
+
+//session & database
+const session =require('express-session')
