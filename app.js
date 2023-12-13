@@ -46,7 +46,7 @@ let sessionStore = new MySQLStore(options)
 
 app.use(session({
   key : 'S_DATA',
-  secret : `FFAFDSA#$$$ghewirEhdgoanfrhk@!`,
+  secret : `asd5f%^fF7EfFo2e2fL4V!@!$d6sG1`,
   store:sessionStore,
   resave : false,
   saveUninitialized : false,
