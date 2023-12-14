@@ -64,3 +64,11 @@ app.use(async function(req, res, next){
   res.locals.url = req.url;
   next();
 })
+
+// Routes
+const routes = glob.sync('routes/**/*.js');
+routes.forEach((file) => {
+  let route = file.substr(6, file.length - 9);
+  route = route.replace('index','');
+  app.use(route, require('./'+file)(app));
+})
